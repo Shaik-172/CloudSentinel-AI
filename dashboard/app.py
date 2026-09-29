@@ -9,9 +9,14 @@ import matplotlib.pyplot as plt
 # CloudSentinel AI - Security Monitoring Dashboard v2
 # ==========================================================
 
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+
 MODEL_PATH = (
-    r"D:\CloudSentinel-AI\models"
-    r"\cloudsentinel_multiclass_model.pkl"
+    ROOT_DIR
+    / "models"
+    / "cloudsentinel_multiclass_model.pkl"
 )
 
 
